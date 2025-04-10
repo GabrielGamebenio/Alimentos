@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alimentos - Loja de comida</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Alimentos</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre a Alimentos</h2>
+      <p>Descrição sobre a empresa e sua missão de oferecer equipamentos tecnológicos de qualidade.</p>
+    </section>
+
+    <section id="produtos">
+      <h2>Nossos Produtos</h2>
+      <ul>
+        <li>
+          <h3>Feijoada</h3>
+          <p>Consiste num guisado de feijão, normalmente com carne, e quase sempre acompanhado com arroz.</p>
+          <img src="https://i.panelinha.com.br/i1/bk-9097-39-panelinha-12-02-200635.webp" alt="">
+          <br>
+          <button onclick="addToCart('Feijoada')">Adicionar ao Carrinho</button>
+        </li>
+        <li>
+          <h3>Brigadeiro</h3>
+          <p>O brigadeiro é um doce brasileiro feito de leite condensado, manteiga e chocolate, coberto com granulado. É um doce popular em festas e pode ser encontrado em padarias e lanchonetes. </p>
+          <img src="https://www.sabornamesa.com.br/media/k2/items/cache/5003d452a8da016f3ed02a6385cf54e8_XL.jpg" alt="">
+          <br>
+          <button onclick="addToCart('Brigadeiro')">Adicionar ao Carrinho</button>
+        </li>
+        <li>
+          <h3>Coxinha</h3>
+          <p>A coxinha é um salgado brasileiro feito de massa de farinha de trigo e recheio de carne de frango temperada. É um dos salgadinhos mais famosos do Brasil. </p>
+          <img src="https://kyodai.com.br/wp-content/uploads/2018/12/mini_cox_close_kyodai.jpeg" alt="">
+          <br>
+          <button onclick="addToCart('Coxinha')">Adicionar ao Carrinho</button>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Entre em Contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <br>
+  
+
+  <footer>
+    <p>&copy; 2023 CompraTech. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
